@@ -90,12 +90,12 @@ def func(message):
     
     elif message.text == "📺Скриншот рабочего стола!":
          image = pyscreenshot.grab()
-         image.save("D:\Programm\Бот работа\screenshot.png")
-         bot.send_photo(message.chat.id, photo=open("D:\Programm\Бот работа\screenshot.png",'rb'))
+         image.save("SPECIFY THE WAY TO SAVE SCREENSHOTS")
+         bot.send_photo(message.chat.id, photo=open("SPECIFY THE WAY TO SAVE SCREENSHOTS",'rb'))
          bot.send_message(message.chat.id, text="Лови скриншот!")
     elif message.text == "📺Скриншот рабочего стола!":
-         os.path.isfile("D:\Programm\Бот работа\screenshot.png")
-         os.remove("D:\Programm\Бот работа\screenshot.png")     
+         os.path.isfile("SPECIFY THE WAY TO SAVE SCREENSHOTS")
+         os.remove("SPECIFY THE WAY TO SAVE SCREENSHOTS")     
     elif message.text == '🌌Мой ютуб канал!':
          bot.send_message(message.chat.id, text='https://www.youtube.com/channel/UCPzVuAKMI3Oah3ytYEXmUdw')
     elif (message.text == "✈️Вернуться обратно"):
